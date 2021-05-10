@@ -5,27 +5,26 @@ E-commerce shoping platform that uses Redux to manage it's state
 
 ## Built with
 * JavaScript
-* Node
+* HTML
+* CSS
 
 ## npm 
 * Express
-* compression
-* mongoose
-* morgan
-* routes
+* React
+* Mongoose
+* Bcrypt
+* Rroutes
+* Jsonwebtoken
+* Stripe
+* Graphql
+* Jtw-decode
+* Apollo
 
-## Category
+## Landing Page
+![](/images/landingPage.PNG)
 
-#### Install App
-![](/public/images/appInstall.PNG)
-
-#### Offline post
-![](/public/images/offlinePost.PNG)
-
-#### Online repost
-![](/public/images/onlineRepost.PNG)
 
 ## Relevent links
-Heroku link: https://budget-tracker-manjula.herokuapp.com/
+Url link: 
 
-Git hub link: https://github.com/Manjula85/budget-tracker-Manjula
+Git hub link: https://github.com/Manjula85/e-commerce-platform-Redux
