@@ -6,12 +6,21 @@ import { idbPromise } from "../../utils/helpers"
 import CartItem from "../CartItem";
 import Auth from "../../utils/auth";
 import { useStoreContext } from "../../utils/GlobalState";
-import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
+import { ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
+//Redux stuff
+import {toggleCart as reduxToggleCart} from "../../redux/cartActions";
+import {useSelector, useDispatch} from 'react-redux';
+
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
+  
+  //Redux stuff
+  const reduxDispatch = useDispatch();
+  const {cartOpen} = useSelector(state=>state.cart);
+  
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
@@ -35,7 +44,8 @@ const Cart = () => {
   }, [state.cart.length, dispatch]);
 
   function toggleCart() {
-    dispatch({ type: TOGGLE_CART });
+    //dispatch({ type: TOGGLE_CART });
+    reduxDispatch(reduxToggleCart());
   }
 
   function calculateTotal() {
@@ -60,7 +70,7 @@ const Cart = () => {
     });
   }
 
-  if (!state.cartOpen) {
+  if (!cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
         <span
