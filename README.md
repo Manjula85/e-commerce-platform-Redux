@@ -1,7 +1,7 @@
 # e-commerce-platform-Redux
 
 ## Purpose
-E-commerce shoping platform that uses Redux to manage it's state
+E-commerce shoping platform that uses Redux to manage it's state.
 
 ## Built with
 * JavaScript
