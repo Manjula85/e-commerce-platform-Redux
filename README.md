@@ -25,6 +25,6 @@ E-commerce shoping platform that uses Redux to manage it's state.
 
 
 ## Relevent links
-Url link: 
+Git hub url: https://manjula85.github.io/e-commerce-platform-Redux/ 
 
 Git hub link: https://github.com/Manjula85/e-commerce-platform-Redux
