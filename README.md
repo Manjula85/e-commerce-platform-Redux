@@ -25,6 +25,9 @@ E-commerce shoping platform that uses Redux to manage it's state.
 
 
 ## Relavent links
+
+Heroku url: https://e-commerce-platform-redux.herokuapp.com/
+
 Git hub url: https://manjula85.github.io/e-commerce-platform-Redux/ 
 
 Git hub link: https://github.com/Manjula85/e-commerce-platform-Redux
